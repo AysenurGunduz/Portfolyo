@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFF0F5; /* Toz pembe arka plan */
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Genel stil tanımlamaları */
+:root {
+  --primary-color: #FFB6C1; /* Açık pembe */
+  --secondary-color: #FF69B4; /* Koyu pembe */
+  --accent-color: #DDA0DD; /* Eflatun */
+  --dark-color: #4A4A4A; /* Koyu gri */
+  --light-color: #FFF0F5; /* Toz pembe */
+  --text-color: #4A4A4A; /* Koyu gri */
+  --text-light: #6B6B6B; /* Orta gri */
+}
+
+/* Genel container stil */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Responsive tasarım için medya sorguları */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+} 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="800px" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="rocketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:0.2"/>
+            <stop offset="100%" style="stop-color:#FFF0F5;stop-opacity:0.1"/>
+        </linearGradient>
+    </defs>
+    <g opacity="0.6">
+        <!-- Roket gövdesi -->
+        <path d="M400 100C350 100 310 140 310 190C310 320 400 500 400 500C400 500 490 320 490 190C490 140 450 100 400 100Z" 
+              fill="url(#rocketGradient)" 
+              stroke="#FF69B4" 
+              stroke-width="8"/>
+        
+        <!-- Roket penceresi -->
+        <circle cx="400" cy="220" r="30" 
+                fill="#FFF0F5" 
+                stroke="#FF69B4" 
+                stroke-width="4"/>
+        
+        <!-- Kanatlar -->
+        <path d="M310 300L250 400L310 380Z" 
+              fill="#FFB6C1" 
+              stroke="#FF69B4" 
+              stroke-width="4"/>
+        <path d="M490 300L550 400L490 380Z" 
+              fill="#FFB6C1" 
+              stroke="#FF69B4" 
+              stroke-width="4"/>
+        
+        <!-- Roket ateşi -->
+        <path d="M370 500C370 500 400 600 400 600C400 600 430 500 430 500C430 500 400 520 400 520C400 520 370 500 370 500Z" 
+              fill="#FFB6C1" 
+              opacity="0.7">
+            <animate attributeName="d" 
+                     dur="1s" 
+                     repeatCount="indefinite" 
+                     values="M370 500C370 500 400 600 400 600C400 600 430 500 430 500C430 500 400 520 400 520C400 520 370 500 370 500Z;
+                             M370 500C370 500 400 550 400 550C400 550 430 500 430 500C430 500 400 520 400 520C400 520 370 500 370 500Z;
+                             M370 500C370 500 400 600 400 600C400 600 430 500 430 500C430 500 400 520 400 520C400 520 370 500 370 500Z"/>
+        </path>
+    </g>
+</svg> 
