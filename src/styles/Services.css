@@ -1,11 +1,15 @@
 .services {
-  padding: 4rem 2rem;
+  padding: 120px 2rem 4rem;
   background-color: #FFF0F5;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .services-content {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .services h2 {
@@ -26,19 +30,21 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 1rem;
+  width: 100%;
 }
 
 .service-card {
   background: white;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(255, 182, 193, 0.2);
   transition: transform 0.3s ease;
   text-align: center;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(255, 182, 193, 0.3);
 }
 
 .service-icon {

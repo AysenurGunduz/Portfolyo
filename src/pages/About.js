@@ -10,12 +10,13 @@ function About() {
         <div className="about-grid">
           <div className="about-text">
             <p>
-              Merhaba! Ben Ayşenur Ebrar Gündüz. Balıkesir Üniversitesinde Bilgisayar Mühendisliği
-              2. sınıf öğrencisiyim. Savunma Sanayi projelerine ilgiliyim...
-              ...... DEVAMINI YAZ
-            </p>
-            <p>
-              DLSKJFLSDFHJLDKFJLKSLDKFJDLKSDJGHNLSKDJLDKFNÇKJKDLJLKJSLKDFNLSN
+              Merhaba! Ben Ayşenur Ebrar Gündüz. 
+              Son 2 yıldır savunma sanayi sistemleri üzerine şevkle çalışmaktayım.
+              Bilgisayar mühendisiyim. Model roketlere olan ilgim beni savunma sanayi
+              alanına yönlendirdi. Bu alanda gelişmek için algoritma tasarımları, sensör
+              ve mikrodenetleyici sistem çalışmaları, raporlama ve analiz işlerinde kendimi
+              geliştirmekteyim. Bunun yanında uygulama tasarımları, başlangıç düzeyinde 
+              Web tasarımları alanlarında çalışmaktayım.
             </p>
             <div className="personal-info">
               <div className="info-row">
@@ -29,6 +30,10 @@ function About() {
               <div className="info-row">
                 <span className="info-label">E-posta:</span>
                 <span className="info-value">ahebrar02@gmail.com</span>
+              </div>
+              <div className="info-row">
+                <span className="info-label">Hobiler:</span>
+                <span className="info-value">Badminton</span>
               </div>
             </div>
           </div>

@@ -113,24 +113,6 @@
   flex-grow: 1;
 }
 
-.view-project-btn {
-  padding: 0.8rem 1.5rem;
-  background-color: #FF69B4;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  align-self: flex-start;
-}
-
-.view-project-btn:hover {
-  background-color: #FF1493;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
-}
-
 .category-tags {
   display: flex;
   gap: 0.5rem;

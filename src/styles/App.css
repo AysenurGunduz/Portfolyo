@@ -11,12 +11,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFF0F5; /* Toz pembe arka plan */
+  overflow-x: hidden;
 }
 
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 /* Genel stil tanımlamaları */
@@ -35,6 +45,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  overflow-x: hidden;
 }
 
 /* Responsive tasarım için medya sorguları */

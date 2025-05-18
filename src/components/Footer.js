@@ -16,7 +16,7 @@ function Footer() {
         </a>
       </div>
       <div className="footer-text">
-        <p>&copy; 2024 Ayşenur Ebrar Gündüz. Tüm hakları saklıdır.</p>
+        <p>&copy; 2025 Ayşenur Ebrar Gündüz. Tüm hakları saklıdır.</p>
       </div>
     </footer>
   );

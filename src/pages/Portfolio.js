@@ -44,9 +44,17 @@ function Portfolio() {
       id: 6,
       title: 'Deprem Kayıt Uygulaması',
       categories: ['Proje'],
-      image: '/images/dku.png',
+      image: '/images/dku2.png',
       description: 'Depremde kullanılması için geliştirdiğim ve hala geliştirmekte olduğum Deprem Kayıt Uygulamam',
       githubUrl: 'https://github.com/AysenurGunduz/Deprem-Uygulamas-'
+    },
+    {
+      id: 7,
+      title: 'Soru Bankası Uygulaması',
+      categories: ['Proje'],
+      image: '/images/SoruBankasi.png',
+      description: 'Soruları veri tabanına kaydedip, seçim üzerine yazdırım işlemleri yapan soru bankası uygulaması',
+      githubUrl: 'https://github.com/AysenurGunduz/Soru-Bankas-'
     }
   ];
 
@@ -104,7 +112,6 @@ function Portfolio() {
                   ))}
                 </div>
                 <div className="card-buttons">
-                  <button className="view-project-btn">Detayları Gör</button>
                   {project.githubUrl && (
                     <a 
                       href={project.githubUrl} 
