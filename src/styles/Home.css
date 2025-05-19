@@ -136,21 +136,94 @@
 
 @media (max-width: 768px) {
   .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    gap: 1rem;
+  }
+  
+  .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1.2rem 2rem;
+  }
+
+  .featured-section h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .skill-card h4 {
+    font-size: 1.4rem;
+  }
+
+  .skill-card p {
+    font-size: 1.1rem;
+  }
+
+  .skill-card i {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2.4rem;
   }
   
   .hero-section h2 {
     font-size: 1.8rem;
   }
   
-  .cta-buttons {
-    flex-direction: column;
-    width: 100%;
-    max-width: 300px;
+  .hero-section p {
+    font-size: 1.2rem;
   }
-  
+
+  .profile-image {
+    width: 160px;
+    height: 160px;
+  }
+
   .btn {
-    width: 100%;
-    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 1.8rem;
+  }
+
+  .featured-section h3 {
+    font-size: 2rem;
+  }
+
+  .skill-card h4 {
+    font-size: 1.3rem;
+  }
+
+  .skill-card p {
+    font-size: 1rem;
+  }
+
+  .skill-card i {
+    font-size: 2.5rem;
   }
 } 

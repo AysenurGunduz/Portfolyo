@@ -71,8 +71,9 @@
   }
   
   .services h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   .services-grid {
@@ -82,15 +83,22 @@
   }
 
   .service-card {
-    padding: 1.5rem;
+    padding: 1.8rem;
   }
 
   .service-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
   }
 
   .service-card p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .service-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
   }
 }
 
@@ -101,10 +109,23 @@
   }
 
   .services h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
   }
 
   .service-card {
-    padding: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
   }
 } 
