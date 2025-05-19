@@ -2,6 +2,9 @@
   text-align: center;
   max-width: 100%;
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -47,10 +50,20 @@
   .App-header {
     font-size: calc(8px + 2vmin);
     padding: 10px;
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
   }
   
   .App-logo {
     height: 30vmin;
+    max-width: 90%;
+  }
+
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -58,9 +71,44 @@
   .App-header {
     font-size: calc(6px + 2vmin);
     padding: 5px;
+    min-height: calc(100vh - 50px);
+    margin-top: 50px;
   }
   
   .App-logo {
     height: 25vmin;
+    max-width: 95%;
   }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Genel responsive container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive görüntüler için */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive tablolar için */
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Responsive form elemanları için */
+input, textarea, select {
+  max-width: 100%;
+  box-sizing: border-box;
 }
