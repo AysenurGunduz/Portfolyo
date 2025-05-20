@@ -206,7 +206,8 @@
   }
 
   .featured-section {
-    padding: 2.5rem 0.5rem;
+    padding: 7rem 0.5rem 2.5rem 0.5rem;
+    scroll-margin-top: 6rem;
   }
   .skills-grid {
     grid-template-columns: 1fr;
@@ -219,6 +220,7 @@
   }
   .featured-section h3 {
     font-size: 2.3rem;
+    margin-top: 0;
     margin-bottom: 2rem;
   }
   .skill-card h4 {
@@ -263,7 +265,8 @@
   }
 
   .featured-section {
-    padding: 1.5rem 0.2rem;
+    padding: 6rem 0.2rem 1.5rem 0.2rem;
+    scroll-margin-top: 5rem;
   }
   .skills-grid {
     grid-template-columns: 1fr;
@@ -276,6 +279,7 @@
   }
   .featured-section h3 {
     font-size: 1.5rem;
+    margin-top: 0;
     margin-bottom: 1.2rem;
   }
   .skill-card h4 {
