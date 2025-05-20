@@ -1,8 +1,29 @@
 .home {
   position: relative;
   min-height: 100vh;
-  background-color: #FFF0F5;
+  background-color: rgba(255, 240, 245, 0.088);
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.home::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../public/images/anamenu.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+  background-attachment: fixed;
 }
 
 .hero-section {
@@ -14,8 +35,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #FFF0F5;
-  color: #4A4A4A;
+  background-color: rgba(255, 240, 245, 0.088);
+  color: #2A2A2A;
   padding: 2rem;
 }
 
@@ -39,19 +60,22 @@
 .hero-section h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #FF69B4;
+  color: #D81B60;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #DDA0DD;
+  color: #9C27B0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section p {
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
-  color: #4A4A4A;
+  color: #333333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .cta-buttons {
@@ -84,15 +108,18 @@
 }
 
 .featured-section {
+  position: relative;
+  z-index: 1;
   padding: 4rem 2rem;
-  background-color: white;
+  background-color: rgba(255, 240, 245, 0.088);
 }
 
 .featured-section h3 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: #FF69B4;
+  color: #D81B60;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .skills-grid {
@@ -104,7 +131,7 @@
 }
 
 .skill-card {
-  background-color: #FFF0F5;
+  background-color: rgba(255, 240, 245, 0.9);
   padding: 2rem;
   border-radius: 20px;
   text-align: center;
@@ -119,22 +146,30 @@
 
 .skill-card i {
   font-size: 2.5rem;
-  color: #FF69B4;
+  color: #D81B60;
   margin-bottom: 1rem;
 }
 
 .skill-card h4 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #4A4A4A;
+  color: #333333;
 }
 
 .skill-card p {
-  color: #6B6B6B;
+  color: #444444;
   line-height: 1.6;
 }
 
 @media (max-width: 768px) {
+  .home::before {
+    background-position: center center;
+  }
+
+  .hero-section {
+    background-color: rgba(255, 240, 245, 0.088);
+  }
+
   .hero-section h1 {
     font-size: 2.8rem;
     margin-bottom: 1.2rem;
@@ -189,6 +224,14 @@
 }
 
 @media (max-width: 480px) {
+  .home::before {
+    background-position: center center;
+  }
+
+  .hero-section {
+    background-color: rgba(255, 240, 245, 0.088);
+  }
+
   .hero-section h1 {
     font-size: 2.4rem;
   }
