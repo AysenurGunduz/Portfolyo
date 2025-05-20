@@ -25,4 +25,32 @@
 .footer-text {
   font-size: 0.9rem;
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-content p {
+    font-size: 1.1rem;
+  }
+
+  .social-links a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-content p {
+    font-size: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1.2rem;
+  }
 } 

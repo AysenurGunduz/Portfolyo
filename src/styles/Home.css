@@ -162,6 +162,23 @@
 }
 
 @media (max-width: 768px) {
+  .home {
+    padding: 100px 1rem 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-content p {
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
   .home::before {
     background-position: center center;
   }
@@ -234,6 +251,19 @@
 }
 
 @media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.3rem;
+  }
+
   .home::before {
     background-position: center center;
   }

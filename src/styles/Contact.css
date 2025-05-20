@@ -134,4 +134,40 @@
   .contact-info {
     grid-template-columns: 1fr;
   }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  .contact-form button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .contact-info p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
 } 

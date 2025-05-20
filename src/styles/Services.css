@@ -73,12 +73,52 @@
   }
   
   .services h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     padding-top: 0.5rem;
   }
   
+  .services-intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-icon {
+    font-size: 2.2rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-card p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services h2 {
+    font-size: 1.8rem;
+  }
+  
+  .services-intro {
+    font-size: 1rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
   }
 } 
