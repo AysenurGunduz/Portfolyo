@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   background-attachment: fixed;
+  z-index: 1;
 }
 
 .home::before {
@@ -38,6 +39,10 @@
   background-color: rgba(255, 240, 245, 0.088);
   color: #2A2A2A;
   padding: 2rem;
+}
+
+.hero-section > * {
+  pointer-events: auto;
 }
 
 .profile-image {

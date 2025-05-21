@@ -4,10 +4,14 @@
   padding: 2rem;
   text-align: center;
   margin-top: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .social-links {
   margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .social-links a {
@@ -16,6 +20,8 @@
   margin: 0 1rem;
   text-decoration: none;
   transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .social-links a:hover {

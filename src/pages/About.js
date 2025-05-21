@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/About.css';
 
+// Bu bileşen, kullanıcının kişisel bilgilerini, yeteneklerini ve deneyimlerini gösteren "Hakkımda" sayfasını oluşturur.
 function About() {
   return (
     <div className="about">

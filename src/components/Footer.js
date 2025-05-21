@@ -5,13 +5,13 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="social-links">
-        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/?lang=tr" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-twitter"></i>
         </a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/AysenurGunduz" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github"></i>
         </a>
-        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/?locale=tr_TR" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-facebook"></i>
         </a>
       </div>
