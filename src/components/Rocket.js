@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
 const Rocket = ({ delay = 0, size = 30, position = "left" }) => {
-  // Roket pozisyonlarına göre sabit konumlar
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Mobil cihazlar için pozisyonları ayarla
   const positions = {
-    left: { x: "20vw", y: "20vh" },
-    right: { x: "77vw", y: "20vh" }
+    left: windowWidth <= 768 
+      ? { x: "10vw", y: "15vh" }
+      : { x: "20vw", y: "20vh" },
+    right: windowWidth <= 768
+      ? { x: "85vw", y: "15vh" }
+      : { x: "77vw", y: "20vh" }
   };
+
+  // Mobil cihazlar için boyutu ayarla
+  const adjustedSize = windowWidth <= 768 ? 20 : size;
 
   const rocketVariants = {
     initial: {
@@ -57,8 +75,8 @@ const Rocket = ({ delay = 0, size = 30, position = "left" }) => {
       exit="exit"
     >
       <svg
-        width={size}
-        height={size * 1.5}
+        width={adjustedSize}
+        height={adjustedSize * 1.5}
         viewBox="0 0 24 36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
