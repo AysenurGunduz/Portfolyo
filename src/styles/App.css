@@ -4,6 +4,28 @@
   box-sizing: border-box;
 }
 
+/* Scrollbar'ı gizle ama işlevselliğini koru */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Firefox için scrollbar'ı gizle */
+* {
+  scrollbar-width: none;
+}
+
+/* IE ve Edge için scrollbar'ı gizle */
+* {
+  -ms-overflow-style: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,18 +34,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFF0F5; /* Toz pembe arka plan */
   overflow-x: hidden;
-}
-
-.App {
+  overflow-y: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   position: relative;
   overflow-x: hidden;
 }
 
 main {
-  flex: 1;
+  flex: 1 0 auto;
   width: 100%;
   position: relative;
   overflow-x: hidden;
@@ -52,5 +78,11 @@ main {
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-bottom: 160px; /* Daha küçük ekranlar için footer padding'i azalt */
   }
 } 
