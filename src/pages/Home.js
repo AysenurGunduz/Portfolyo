@@ -92,17 +92,17 @@ function Home() {
           variants={containerVariants}
         >
           <motion.div variants={buttonVariants} whileHover="hover">
-            <Link to="/portfolio" className="btn primary">Portfolyomu Gör</Link>
+          <Link to="/portfolio" className="btn primary">Portfolyomu Gör</Link>
           </motion.div>
           
           <motion.div variants={buttonVariants} whileHover="hover">
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="btn primary github-btn">
-              <i className="fab fa-github"></i> GitHub
-            </a>
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="btn primary github-btn">
+            <i className="fab fa-github"></i> GitHub
+          </a>
           </motion.div>
           
           <motion.div variants={buttonVariants} whileHover="hover">
-            <Link to="/contact" className="btn primary">İletişime Geç</Link>
+          <Link to="/contact" className="btn primary">İletişime Geç</Link>
           </motion.div>
         </motion.div>
       </motion.div>

@@ -8,7 +8,6 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import RocketBackground from './components/Rocket';
 import Rocket1 from './components/Rocket1';
 import './styles/App.css';
 
@@ -63,64 +62,34 @@ const AnimatedRoutes = () => {
     ease: "anticipate"
   };
 
+  const routes = [
+    { path: "/", element: <Home /> },
+    { path: "/about", element: <About /> },
+    { path: "/services", element: <Services /> },
+    { path: "/portfolio", element: <Portfolio /> },
+    { path: "/contact", element: <Contact /> }
+  ];
+
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={
-          <motion.div
-            variants={pageVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={pageTransition}
-          >
-            <Home />
-          </motion.div>
-        } />
-        <Route path="/about" element={
-          <motion.div
-            variants={pageVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={pageTransition}
-          >
-            <About />
-          </motion.div>
-        } />
-        <Route path="/services" element={
-          <motion.div
-            variants={pageVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={pageTransition}
-          >
-            <Services />
-          </motion.div>
-        } />
-        <Route path="/portfolio" element={
-          <motion.div
-            variants={pageVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={pageTransition}
-          >
-            <Portfolio />
-          </motion.div>
-        } />
-        <Route path="/contact" element={
-          <motion.div
-            variants={pageVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={pageTransition}
-          >
-            <Contact />
-          </motion.div>
-        } />
+        {routes.map((route) => (
+          <Route
+            key={route.path}
+            path={route.path}
+            element={
+              <motion.div
+                variants={pageVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition={pageTransition}
+              >
+                {route.element}
+              </motion.div>
+            }
+          />
+        ))}
       </Routes>
     </AnimatePresence>
   );
@@ -131,14 +100,13 @@ function App() {
     <Router>
       <div className="App">
         <ScrollToTop />
-        <RocketBackground />
-        <Rocket1 />
         <Navbar />
         <main>
           <AnimatedRoutes />
         </main>
+        <Rocket1 />
       </div>
-    <Footer />
+      <Footer />
     </Router>
   );
 }
