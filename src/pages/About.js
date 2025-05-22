@@ -25,6 +25,10 @@ function About() {
                 <span className="info-value">20</span>
               </div>
               <div className="info-row">
+                <span className="info-label">Doğum Yeri:</span>
+                <span className="info-value">Adıyaman/Gölbaşı</span>
+              </div>
+              <div className="info-row">
                 <span className="info-label">Konum:</span>
                 <span className="info-value">Balıkesir/Türkiye</span>
               </div>
@@ -94,7 +98,7 @@ function About() {
 
               <div className="skill-bar">
                 <div className="skill-info">
-                  <span>Office Uygulamarı Kullanımı</span>
+                  <span>Office Uygulamaları Kullanımı</span>
                   <span>85%</span>
                 </div>
                 <div className="progress-bar">

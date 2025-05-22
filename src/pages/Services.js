@@ -6,7 +6,7 @@ function Services() {
     {
       icon: '',
       title: 'Uygulama Geliştirme',
-      description: 'Kullanıcı dostu arayüzler tasarlama, modern ve etkileyici web tasarımları oluşturma.'
+      description: 'Kullanıcı dostu arayüzler tasarlama, özgün fikirlerle uygulamalar geliştirme.'
     },
     {
       icon: '',
@@ -16,7 +16,7 @@ function Services() {
     {
       icon: '',
       title: 'Algoritma ve Programlama',
-      description: 'Algoritma tasarımları üzerine çalışamalar'
+      description: 'Algoritma tasarımları üzerine çalışmalar'
     },
     {
       icon: '',
@@ -26,7 +26,12 @@ function Services() {
     {
       icon: '',
       title: 'Web Tasarımı',
-      description: 'HTML, CSS, React, Javascript kullanarak modern web uygulamaları tasarlama'
+      description: 'HTML, CSS, React, Javascript kullanarak modern web sayfaları tasarlama'
+    },
+    {
+      icon: '',
+      title: 'Model Roket Tasarımı',
+      description: 'Openrocket kullanarak başlangıç düzeyi model roket tasarlama'
     },
   ];
 

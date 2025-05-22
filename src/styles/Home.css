@@ -161,8 +161,9 @@
 
   .hero-section {
     padding: 2rem 1rem;
-    min-height: calc(100vh - 80px);
-    justify-content: flex-start;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
 
   .profile-image {

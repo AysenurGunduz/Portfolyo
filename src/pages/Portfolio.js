@@ -38,7 +38,7 @@ function Portfolio() {
       title: 'Roket Yarışması Eğitim Projesi',
       categories: ['Eğitim', 'Sertifika'],
       image: '/images/Roketsan.jpg',
-      description: 'React ile geliştirilmiş sosyal medya platformu.'
+      description: 'Roketsan tarafından düzenlenen Roket Yarışması Eğitimini başarıyla tamamladım.'
     },
     {
       id: 6,

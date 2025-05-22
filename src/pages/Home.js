@@ -118,7 +118,7 @@ function Home() {
           <div className="skill-card">
             <i className="fas fa-chart-bar"></i>
             <h4>Raporlama ve Analiz</h4>
-            <p>Office uygulamarı kullanarak raporlama ve analiz </p>
+            <p>Office uygulamaları kullanarak raporlama ve analiz </p>
           </div>
           <div className="skill-card">
             <i className="fas fa-rocket"></i>
