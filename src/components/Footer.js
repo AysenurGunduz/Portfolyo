@@ -14,6 +14,9 @@ function Footer() {
         <a href="https://www.facebook.com/?locale=tr_TR" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-facebook"></i>
         </a>
+        <a href="https://www.linkedin.com/in/ayşenur-gündüz" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin"></i>
+        </a>
       </div>
       <div className="footer-text">
         <p>&copy; 2025 Ayşenur Ebrar Gündüz. Tüm hakları saklıdır.</p>
